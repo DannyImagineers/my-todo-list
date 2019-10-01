@@ -12,7 +12,6 @@ const getExistingTodos = (): Todo[] => {
   };
   /* LocalStorage getItem */
 
-
   const [todos, setTodos] = useState(getExistingTodos);
 
   const toggleTodo: ToggleTodo = selectedTodo => {
@@ -29,15 +28,14 @@ const getExistingTodos = (): Todo[] => {
   };
 
   /* Toggle Todo's */
-
   const addTodo: AddTodo = newTodo  => {
     newTodo.trim() !== "" &&
     setTodos([...todos, { text: newTodo, complete: false}]);
     const stringTodos = JSON.stringify([...todos, { text: newTodo, complete: false}]);
     localStorage.setItem("todos", stringTodos);
   };
+  
 /* LocalStorage setItem */
-
   return (
   <React.Fragment>
     <TodoList todos={todos} toggleTodo={toggleTodo} />

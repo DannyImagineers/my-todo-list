@@ -12,21 +12,17 @@ export const AddTodoForm: React.FC<AddTodoFormProps> = ({ addTodo }) => {
     };
 
     /* Handle Change */
-    
     const handleSubmit = (e: FormEvent<HTMLButtonElement>) => {
         e.preventDefault();
         addTodo(newTodo);
         setNewTodo("");
     }
-
     /* Add todo aan list */
-
     const handleDelete = (e: FormEvent<HTMLButtonElement>) => {
         e.preventDefault();
         
     }
     /* Remove todo van list | Work in progress */
-
     return (    
         <form>
             <input placeholder="Enter your task here" value={newTodo} onChange={handleChange} />
