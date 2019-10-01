@@ -1,0 +1,45 @@
+.complete { 
+    text-decoration: line-through;
+}
+
+html {
+    background-color: rgb(124, 114, 114);
+    padding: 25px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    max-width: 300px;
+    margin: auto;
+}   
+
+button:hover {
+    background-color: #0066ff;
+    border: 2px solid #0066ff;
+    cursor: pointer;
+}
+
+button {
+    font-size: 16px;
+    margin: 10px;
+    margin-right: 0px;
+    background-color: #0066ff;
+    color: #FFF;
+    border: 2px solid #0066ff;
+}
+
+input {
+    font-size: 16px;
+    margin: 5px;;
+    margin-right: 0px;
+    border: 2px solid #0066FF;
+}
+
+body {
+    padding: 50px;
+    background-color: rgb(60, 159, 202);
+    font-family: sans-serif;
+}
+
+
+li {
+    list-style: decimal;
+}
